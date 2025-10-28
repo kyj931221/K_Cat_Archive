@@ -86,7 +86,8 @@ export const portfolioItems = [
         buttons: [
             {
                 text: "영상",
-                url: "https://youtu.be/DpaIf-U44s8?si=Y2o02E_zlQLwD90V"
+                link: "https://youtu.be/DpaIf-U44s8?si=Y2o02E_zlQLwD90V",
+                icon: "play_arrow"
             },
         ],
         related: {title: "글로벌스마트솔루션(주)", icon: "group_work"}
@@ -142,12 +143,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/Glp0o2QQ7OE?si=L3iWIIV43KOWNUl-"
+                text: "영상",
+                link: "https://youtu.be/Glp0o2QQ7OE?si=L3iWIIV43KOWNUl-",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "https://github.com/kyj931221/01.Then-a-ninja-suddenly-appeared"
+                link: "https://github.com/kyj931221/01.Then-a-ninja-suddenly-appeared"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -164,12 +166,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/9kRKZsyv2NQ?si=b2ngfARms_dkj-sr"
+                text: "영상",
+                link: "https://youtu.be/9kRKZsyv2NQ?si=b2ngfARms_dkj-sr",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "https://github.com/kyj931221/02.for-all-of-us"
+                link: "https://github.com/kyj931221/02.for-all-of-us"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -186,12 +189,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/q4wvyRo7qEI?si=0EMzPgX_5wnzkjfe"
+                text: "영상",
+                link: "https://youtu.be/q4wvyRo7qEI?si=0EMzPgX_5wnzkjfe",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -208,12 +212,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/rV8lyufHbgM?si=MOCgsY3eGx8Iy3Oi"
+                text: "영상",
+                link: "https://youtu.be/rV8lyufHbgM?si=MOCgsY3eGx8Iy3Oi",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -230,12 +235,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/4vkbCIt_f50?si=A_j-WFBtKJ_AbRI5"
+                text: "영상",
+                link: "https://youtu.be/4vkbCIt_f50?si=A_j-WFBtKJ_AbRI5",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "팀 프로젝트", icon: "group"}
@@ -252,12 +258,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/9f-Qh_hm4RQ?si=mhcN2z34br4LUc0J"
+                text: "영상",
+                link: "https://youtu.be/9f-Qh_hm4RQ?si=mhcN2z34br4LUc0J",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "팀 프로젝트", icon: "group"}
@@ -274,12 +281,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtube.com/shorts/q-FsHx9qLf8?si=95U8bwFo54JwWubx"
+                text: "영상",
+                link: "https://youtube.com/shorts/q-FsHx9qLf8?si=95U8bwFo54JwWubx",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -296,12 +304,13 @@ export const portfolioItems = [
         link: "#",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtu.be/KLLUYLJmKxU?si=Sg7xsBF_2s219Xm2"
+                text: "영상",
+                link: "https://youtu.be/KLLUYLJmKxU?si=Sg7xsBF_2s219Xm2",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -318,12 +327,13 @@ export const portfolioItems = [
         link: "https://play.unity.com/en/games/3825e42d-cbc9-4a44-bce6-f6e832feb8ab/webgl-builds",
         buttons: [
             {
-                text: "데모 영상",
-                url: "https://youtube.com/watch?v=..."
+                text: "영상",
+                link: "#",
+                icon: "play_arrow"
             },
             {
                 text: "GitHub",
-                url: "#"
+                link: "#"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
