@@ -3,7 +3,7 @@
 // 1. 프로필, 소개, 학력, 스킬 데이터 (변경 없음)
 export const profileData = {
     name: "김영준 (Kim Young Jun)",
-    profileImage: "public/images/My_Character.png",
+    profileImage: "images/My_Character.png",
     bio: "IoT/ICT 제품 개발자에서 XR 콘텐츠 개발자로 나아가는 김영준입니다. 하드웨어부터 소프트웨어까지 아우르는 시스템 설계 경험과 QA 역량을 바탕으로 몰입감 높은 디지털 콘텐츠를 만듭니다.",
     email: "kyj931221@gmail.com",
     phone: "010-4055-0463",
