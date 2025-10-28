@@ -1,0 +1,23 @@
+/* src/style.css */
+
+/* ⭐️ 1. Tailwind 기본 지시어 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ⭐️ 2. 기존 커스텀 스타일 */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  top: 1.25rem;
+  left: -0.4375rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 9999px;
+  background-color: #283339;
+  border: 2px solid #13a4ec;
+}
+
+[x-cloak] {
+  display: none;
+}

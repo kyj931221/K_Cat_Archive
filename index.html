@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title x-data="portfolioApp" x-text="profile.name + ' - Portfolio'"></title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script type="module" src="/src/main.js"></script>
+</head>
+
+<body class="bg-background-dark font-display text-white" x-data="portfolioApp">
+
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+    <div class="layout-container flex h-full grow flex-col">
+        <div class="flex flex-1 justify-center py-5">
+            <div class="layout-content-container flex flex-col max-w-7xl flex-1">
+
+                <header class="sticky top-0 z-10 bg-background-dark/80 backdrop-blur-sm flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283339] px-10 py-3">
+                    <div class="flex items-center gap-4 text-white">
+                        <div class="size-6">
+                            <svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_6_319)">
+                                    <path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z"
+                                          fill="currentColor"></path>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_6_319">
+                                        <rect fill="white" height="48" width="48"></rect>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </div>
+                        <h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]"
+                            x-text="profile.name"></h2>
+                    </div>
+                    <div class="flex flex-1 justify-end gap-8">
+                        <div class="flex items-center gap-9">
+                            <a class="text-white text-sm font-medium leading-normal hover:text-primary" href="#about">About</a>
+                            <a class="text-white text-sm font-medium leading-normal hover:text-primary" href="#career">Career</a>
+                            <a class="text-white text-sm font-medium leading-normal hover:text-primary"
+                               href="#portfolio">Portfolio</a>
+                        </div>
+                    </div>
+                </header>
+
+                <main class="flex-1 px-10">
+                    <section class="py-16" id="about">
+                        <div class="flex p-4 @container">
+                            <div class="flex w-full flex-col gap-8 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+                                <div class="flex gap-8">
+                                    <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32"
+                                         data-alt="Profile picture"
+                                         :style="'background-image: url(\'' + profile.profileImage + '\');'"></div>
+                                    <div class="flex flex-col justify-center gap-2">
+                                        <p class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em]"
+                                           x-text="profile.name"></p>
+
+                                        <p class="text-[#9db0b9] text-base font-normal leading-normal max-w-md"
+                                           x-text="profile.bio"></p>
+
+                                        <div class="flex flex-col sm:flex-row gap-4 mt-4 text-[#9db0b9]">
+                                            <a href="#" class="flex items-center gap-2 group">
+                                                <span class="material-symbols-outlined text-xl text-primary/70 group-hover:text-primary">call</span>
+                                                <span class="text-sm font-medium group-hover:text-white"
+                                                      x-text="profile.phone"></span>
+                                            </a>
+                                            <a href="#" class="flex items-center gap-2 group">
+                                                <span class="material-symbols-outlined text-xl text-primary/70 group-hover:text-primary">mail</span>
+                                                <span class="text-sm font-medium group-hover:text-white"
+                                                      x-text="profile.email"></span>
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+
+                                    <template x-for="btn in profile.buttons" :key="btn.text">
+                                        <a :href="btn.link"
+                                           target="_blank" rel="noopener noreferrer"
+                                           class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto"
+
+                                           :class="btn.isPrimary
+                                             ? 'bg-primary hover:bg-opacity-80'
+                                             : 'bg-[#283339] hover:bg-primary/20'">
+
+                                            <span class="truncate" x-text="btn.text"></span>
+                                        </a>
+                                    </template>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-3 p-3 flex-wrap pr-4 mt-4">
+                            <template x-for="skill in profile.skills" :key="skill">
+                                <div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+                                    <p class="text-white text-sm font-medium leading-normal" x-text="skill"></p>
+                                </div>
+                            </template>
+                        </div>
+
+                        <div class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 mt-6">
+
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-4 border-b border-b-[#3b4b54] pb-2">
+                                    Education
+                                </h3>
+                                <ul class="flex flex-col gap-4">
+                                    <template x-for="item in profile.info.filter(i => i.label === '학력')"
+                                              :key="item.value">
+                                        <li class="flex flex-col gap-0 border-l-4 border-primary pl-4 py-1">
+                                            <p class="text-white text-base font-medium" x-text="item.value"></p>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <h3 class="text-lg font-bold text-white mb-4 border-b border-b-[#3b4b54] pb-2">
+                                    Awards & Others
+                                </h3>
+                                <ul class="flex flex-col gap-4">
+                                    <template x-for="item in profile.info.filter(i => i.label !== '학력')"
+                                              :key="item.value">
+                                        <li class="flex flex-col gap-0 border-l-4 border-[#283339] pl-4 py-1">
+                                            <p class="text-[#9db0b9] text-sm font-normal" x-text="item.label"></p>
+                                            <p class="text-white text-base font-medium" x-text="item.value"></p>
+                                        </li>
+                                    </template>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section class="py-16" id="career">
+                        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5">
+                            Career History</h2>
+                        <div class="relative pl-8 border-l-2 border-[#283339]">
+                            <template x-for="(job, index) in career" :key="index">
+                                <div class="relative pl-8 pb-12 timeline-item"
+                                     :class="{ 'pb-0': index === career.length - 1 }">
+                                    <h3 class="text-lg font-bold text-primary" x-text="job.title"></h3>
+                                    <p class="text-sm text-[#9db0b9]" x-text="job.company"></p>
+                                    <p class="mt-2 text-sm text-white" x-text="job.description"></p>
+                                </div>
+                            </template>
+                        </div>
+                    </section>
+
+                    <section class="py-16" id="portfolio">
+                        <h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5">
+                            Portfolio</h2>
+
+                        <div class="flex border-b border-solid border-b-[#283339] mb-0">
+                            <button :class="{'border-b-2 border-primary text-primary': l1_filter === 'all'}"
+                                    @click="setL1Filter('all')"
+                                    class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white flex-shrink-0">
+                                All
+                            </button>
+                            <button :class="{'border-b-2 border-primary text-primary': l1_filter === 'personal'}"
+                                    @click="setL1Filter('personal')"
+                                    class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white flex-shrink-0">
+                                개인
+                            </button>
+                            <button :class="{'border-b-2 border-primary text-primary': l1_filter === 'career'}"
+                                    @click="setL1Filter('career')"
+                                    class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white flex-shrink-0">
+                                경력
+                            </button>
+                            <button :class="{'border-b-2 border-primary text-primary': l1_filter === 'device'}"
+                                    @click="setL1Filter('device')"
+                                    class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white flex-shrink-0">
+                                디바이스
+                            </button>
+                        </div>
+
+                        <div x-show="l1_filter === 'personal'"
+                             class="flex items-center border-b border-solid border-b-[#283339] bg-[#1c272d] px-4 overflow-x-auto"
+                             x-cloak>
+                            <span class="text-sm text-[#9db0b9] mr-4 flex-shrink-0">중분류:</span>
+                            <button :class="{'text-primary': l2_filter === 'all'}" @click="setL2Filter('all')"
+                                    class="px-3 py-2 text-sm font-medium text-white hover:text-primary flex-shrink-0">
+                                All
+                            </button>
+                            <button :class="{'text-primary': l2_filter === 'planning'}" @click="setL2Filter('planning')"
+                                    class="px-3 py-2 text-sm font-medium text-white hover:text-primary flex-shrink-0">기획
+                            </button>
+                            <button :class="{'text-primary': l2_filter === 'design'}" @click="setL2Filter('design')"
+                                    class="px-3 py-2 text-sm font-medium text-white hover:text-primary flex-shrink-0">
+                                디자인
+                            </button>
+                            <button :class="{'text-primary': l2_filter === 'content'}" @click="setL2Filter('content')"
+                                    class="px-3 py-2 text-sm font-medium text-white hover:text-primary flex-shrink-0">
+                                콘텐츠
+                            </button>
+                        </div>
+
+                        <div x-show="l1_filter === 'career'"
+                             class="flex items-center border-b border-solid border-b-[#283339] bg-[#1c272d] px-4 overflow-x-auto"
+                             x-cloak>
+                            <span class="text-sm text-[#9db0b9] mr-4 flex-shrink-0">회사:</span>
+                            <button :class="{'text-primary': l2_filter === 'all'}" @click="setL2Filter('all')"
+                                    class="px-3 py-2 text-sm font-medium text-white hover:text-primary flex-shrink-0">
+                                All
+                            </button>
+                            <template x-for="company in companies" :key="company">
+                                <button :class="{'text-primary': l2_filter === company}" @click="setL2Filter(company)"
+                                        x-text="company"
+                                        class="px-3 py-2 text-sm font-medium text-white hover:text-primary flex-shrink-0"></button>
+                            </template>
+                        </div>
+
+                        <div x-show="l1_filter === 'personal' && l2_filter === 'design'"
+                             class="flex items-center border-b border-solid border-b-[#283339] bg-[#283339] px-4 overflow-x-auto"
+                             x-cloak>
+                            <span class="text-sm text-[#9db0b9] mr-4 flex-shrink-0">소분류:</span>
+                            <button :class="{'text-primary': l3_filter === 'all'}" @click="setL3Filter('all')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">
+                                All
+                            </button>
+                            <button :class="{'text-primary': l3_filter === '2d'}" @click="setL3Filter('2d')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">2D
+                            </button>
+                            <button :class="{'text-primary': l3_filter === '3d'}" @click="setL3Filter('3d')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">3D
+                            </button>
+                        </div>
+
+                        <div x-show="l1_filter === 'personal' && l2_filter === 'content'"
+                             class="flex items-center border-b border-solid border-b-[#283339] bg-[#283339] px-4 overflow-x-auto"
+                             x-cloak>
+                            <span class="text-sm text-[#9db0b9] mr-4 flex-shrink-0">소분류:</span>
+                            <button :class="{'text-primary': l3_filter === 'all'}" @click="setL3Filter('all')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">
+                                All
+                            </button>
+                            <button :class="{'text-primary': l3_filter === 'game'}" @click="setL3Filter('game')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">게임
+                            </button>
+                            <button :class="{'text-primary': l3_filter === 'ar-vr'}" @click="setL3Filter('ar-vr')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">
+                                AR-VR
+                            </button>
+                            <button :class="{'text-primary': l3_filter === 'etc'}" @click="setL3Filter('etc')"
+                                    class="px-3 py-2 text-xs font-medium text-white hover:text-primary flex-shrink-0">기타
+                            </button>
+                        </div>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 mt-8">
+                            <template x-for="item in filteredItems" :key="item.id">
+                                <div class="bg-[#1c272d] rounded-lg overflow-hidden group">
+                                    <img class="w-full aspect-video object-cover" :src="item.imgSrc"
+                                         :data-alt="item.imgAlt"/>
+                                    <div class="p-4">
+                                        <h3 class="text-lg font-bold text-white" x-text="item.title"></h3>
+                                        <p class="text-sm text-[#9db0b9] mt-1" x-text="item.description"></p>
+
+                                        <div x-show="!item.buttons || item.buttons.length === 0"
+                                             class="mt-4 flex justify-between items-center">
+                                            <a class="text-sm font-bold text-primary hover:underline" :href="item.link">View
+                                                Details</a>
+                                            <div class="flex items-center gap-1" :title="item.related.title"
+                                                 x-show="item.related">
+                                                <span class="material-symbols-outlined text-sm text-[#9db0b9]"
+                                                      x-text="item.related.icon"></span>
+                                            </div>
+                                        </div>
+
+                                        <div x-show="item.buttons && item.buttons.length > 0"
+                                             class="mt-4 flex flex-col gap-3">
+                                            <div class="flex gap-2">
+                                                <template x-for="btn in item.buttons" :key="btn.text">
+                                                    <button class="flex-1 flex items-center justify-center gap-2 h-9 px-3 rounded-md bg-[#283339] text-white text-xs font-bold hover:bg-primary/20">
+                                                        <span class="material-symbols-outlined text-sm"
+                                                              x-text="btn.icon"></span>
+                                                        <span x-text="btn.text"></span>
+                                                    </button>
+                                                </template>
+                                            </div>
+                                            <div class="flex justify-between items-center">
+                                                <a class="text-sm font-bold text-primary hover:underline"
+                                                   :href="item.link">View Details</a>
+                                                <div class="flex items-center gap-1" :title="item.related.title"
+                                                     x-show="item.related">
+                                                    <span class="material-symbols-outlined text-sm text-[#9db0b9]"
+                                                          x-text="item.related.icon"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+
+                        <div x-show="filteredItems.length === 0" class="text-center text-[#9db0b9] py-16" x-cloak>
+                            <p class="text-lg">표시할 포트폴리오 항목이 없습니다.</p>
+                            <p class="text-sm">다른 필터 옵션을 선택해 주세요.</p>
+                        </div>
+
+                    </section>
+                </main>
+
+                <footer class="text-center py-8 border-t border-solid border-t-[#283339] mt-16">
+                    <p class="text-[#9db0b9] text-sm">© 2025 <span x-text="profile.name"></span>. All Rights Reserved.
+                    </p>
+                </footer>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

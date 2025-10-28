@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>John Doe - Portfolio</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13a4ec",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101c22",
+                    },
+                    fontFamily: {
+                        "display": ["Space Grotesk", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            top: 1.25rem;
+            left: -0.4375rem;
+            width: 0.875rem;
+            height: 0.875rem;
+            border-radius: 9999px;
+            background-color: #283339;
+            border: 2px solid #13a4ec;
+        }
+        [x-cloak] {
+            display: none;
+        }
+    </style>
+<script defer="" src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+</head>
+<body class="bg-background-dark font-display text-white">
+<div class="relative flex h-auto min-h-screen w-full flex-col overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<header class="sticky top-0 z-10 bg-background-dark/80 backdrop-blur-sm flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#283339] px-10 py-3">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_319)">
+<path d="M8.57829 8.57829C5.52816 11.6284 3.451 15.5145 2.60947 19.7452C1.76794 23.9758 2.19984 28.361 3.85056 32.3462C5.50128 36.3314 8.29667 39.7376 11.8832 42.134C15.4698 44.5305 19.6865 45.8096 24 45.8096C28.3135 45.8096 32.5302 44.5305 36.1168 42.134C39.7033 39.7375 42.4987 36.3314 44.1494 32.3462C45.8002 28.361 46.2321 23.9758 45.3905 19.7452C44.549 15.5145 42.4718 11.6284 39.4217 8.57829L24 24L8.57829 8.57829Z" fill="currentColor"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_319">
+<rect fill="white" height="48" width="48"></rect>
+</clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">John Doe</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-white text-sm font-medium leading-normal hover:text-primary" href="#about">About</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary" href="#career">Career</a>
+<a class="text-white text-sm font-medium leading-normal hover:text-primary" href="#portfolio">Portfolio</a>
+</div>
+<div class="flex gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#283339] text-white hover:bg-primary/20 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white text-xl"> group_work </span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#283339] text-white hover:bg-primary/20 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white text-xl"> palette </span>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 bg-[#283339] text-white hover:bg-primary/20 gap-2 text-sm font-bold leading-normal tracking-[0.015em] min-w-0 px-2.5">
+<span class="material-symbols-outlined text-white text-xl"> hub </span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 px-10">
+<section class="py-16" id="about">
+<div class="flex p-4 @container">
+<div class="flex w-full flex-col gap-8 @[520px]:flex-row @[520px]:justify-between @[520px]:items-center">
+<div class="flex gap-8">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full min-h-32 w-32" data-alt="John Doe profile picture" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA36efDE429RogXS1gWysQUzNywu466KZKcTQsT-IFSIoxqbXdeO6d6xyc63_y_KF2HG9uEKm7wVvytpcdeYChLBGW6LKNWFwMMolSNqmM6Ri7Rmsh9kZVhxh5Eru8ak2iNfEQK-QFsmdRDEVQ36BdBWz0QLpzaP--9mEbS44nO_0AWy8IeX7NG5COfPP2KVJy-Yfb5OoxDaon-rSnctzhMHm_N6WhGuiFHdv8TwnGWR9xuSoi3lSAcf0HlFX4Lq6N13krnQrz9XIat");'></div>
+<div class="flex flex-col justify-center gap-2">
+<p class="text-white text-[28px] font-bold leading-tight tracking-[-0.015em]">John Doe</p>
+<p class="text-[#9db0b9] text-base font-normal leading-normal max-w-md">I'm a passionate UI/UX Designer and Game Developer, creating engaging and intuitive digital experiences from concept to launch. Based in San Francisco, CA.</p>
+</div>
+</div>
+<div class="flex w-full max-w-[480px] gap-3 @[480px]:w-auto">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-[#283339] text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-primary/20">
+<span class="truncate">Download CV</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] flex-1 @[480px]:flex-auto hover:bg-opacity-80">
+<span class="truncate">Contact Me</span>
+</button>
+</div>
+</div>
+</div>
+<div class="flex gap-3 p-3 flex-wrap pr-4 mt-4">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">UI/UX Design</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">Unity</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">Blender</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">Game Design</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">3D Modeling</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">C#</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#283339] pl-4 pr-4">
+<p class="text-white text-sm font-medium leading-normal">Figma</p>
+</div>
+</div>
+<div class="p-4 grid grid-cols-1 sm:grid-cols-2 mt-6">
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#3b4b54] py-4 pr-2">
+<p class="text-[#9db0b9] text-sm font-normal leading-normal">Education</p>
+<p class="text-white text-sm font-normal leading-normal">B.S. in Computer Science - University of California, Berkeley (2020)</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#3b4b54] py-4 sm:pl-2">
+<p class="text-[#9db0b9] text-sm font-normal leading-normal">Extracurriculars</p>
+<p class="text-white text-sm font-normal leading-normal">President of the Game Design Club</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#3b4b54] py-4 pr-2">
+<p class="text-[#9db0b9] text-sm font-normal leading-normal">Awards</p>
+<p class="text-white text-sm font-normal leading-normal">Best Student Game - GDC 2021</p>
+</div>
+<div class="flex flex-col gap-1 border-t border-solid border-t-[#3b4b54] py-4 sm:pl-2">
+<p class="text-[#9db0b9] text-sm font-normal leading-normal">Certifications</p>
+<p class="text-white text-sm font-normal leading-normal">Certified Unity Developer</p>
+</div>
+</div>
+</section>
+<section class="py-16" id="career">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5">Career History</h2>
+<div class="relative pl-8 border-l-2 border-[#283339]">
+<div class="relative pl-8 pb-12 timeline-item">
+<h3 class="text-lg font-bold text-primary">Senior UI/UX Designer</h3>
+<p class="text-sm text-[#9db0b9]">PixelPerfect Studios | 2022 - Present</p>
+<p class="mt-2 text-sm text-white">Led the UI/UX design for three major mobile game titles, resulting in a 20% increase in player retention. Mentored junior designers and established new design workflows.</p>
+</div>
+<div class="relative pl-8 pb-12 timeline-item">
+<h3 class="text-lg font-bold text-primary">Game Designer</h3>
+<p class="text-sm text-[#9db0b9]">DreamWeaver Games | 2020 - 2022</p>
+<p class="mt-2 text-sm text-white">Designed and implemented core game mechanics, level designs, and narrative elements for an award-winning indie RPG. Collaborated closely with artists and programmers.</p>
+</div>
+<div class="relative pl-8 timeline-item">
+<h3 class="text-lg font-bold text-primary">UI Design Intern</h3>
+<p class="text-sm text-[#9db0b9]">Innovate Inc. | Summer 2019</p>
+<p class="mt-2 text-sm text-white">Assisted the design team with creating mockups, wireframes, and prototypes for various web and mobile applications. Gained valuable experience in an agile development environment.</p>
+</div>
+</div>
+</section>
+<section class="py-16" id="portfolio" x-data="{ tab: 'all' }">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-8 pt-5">Portfolio</h2>
+<div class="flex border-b border-solid border-b-[#283339] mb-8">
+<button :class="{'border-b-2 border-primary text-primary': tab === 'all'}" @click="tab = 'all'" class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white">All</button>
+<button :class="{'border-b-2 border-primary text-primary': tab === 'design'}" @click="tab = 'design'" class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white">Design</button>
+<button :class="{'border-b-2 border-primary text-primary': tab === 'game'}" @click="tab = 'game'" class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white">Game</button>
+<button :class="{'border-b-2 border-primary text-primary': tab === 'planning'}" @click="tab = 'planning'" class="px-4 py-2 text-base font-medium text-[#9db0b9] hover:text-white">Planning</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-[#1c272d] rounded-lg overflow-hidden group" x-cloak="" x-show="tab === 'all' || tab === 'design'">
+<img class="w-full h-48 object-cover" data-alt="A modern UI dashboard design" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqzDEvWHKUwG3o5TfvR_nF6uSnoh8LgBBoPQyWKDQVcDXL8Xp_3UYz0CUoi6WG-fWpDVeNqVPaPKI99ZZKMqaeWVEbAc4y6m0KxvZPhc1_9cYn04kAK4Y0RuUicAP0A7x0-oK__jYRRnhdY1zuWR981UxA6PnKQmaTNiVTNY75d54Il4Dw8QAiFgh-NFwkTnffjOhflj7xfIiT5_nxh2p04FZg9_wLVjPjMgvP-I0hLsKPzXkg8KEYgN4m0b6pBWNZnU7fv2qgTqcm"/>
+<div class="p-4">
+<h3 class="text-lg font-bold text-white">Project Dashboard UI</h3>
+<p class="text-sm text-[#9db0b9] mt-1">A clean and modern UI for a project management dashboard.</p>
+<div class="mt-4 flex justify-between items-center">
+<a class="text-sm font-bold text-primary hover:underline" href="#">View Details</a>
+<div class="flex items-center gap-1" title="Related to 'Project Management GDD'">
+<span class="material-symbols-outlined text-sm text-[#9db0b9]">description</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[#1c272d] rounded-lg overflow-hidden group" x-cloak="" x-show="tab === 'all' || tab === 'design'">
+<img class="w-full h-48 object-cover" data-alt="Sci-fi character concept art" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAPENGajTRyG7KXYLkOx0NDYsqHGv88yOCnTJSfZ1F-TcQ4ri8gMfflSgNFE3d7hxKcBeqLGW5aRVK5LV9j3FqYy7_aQqWM4XlfgB2VSwICL45Id5-mcuStSNGNQiypHqpphDYPwhRfX9d5f8fIZfPbPnUJ3ZllVq4qQ8isBji5vouWh_v_kXLBgWVjJ7a7-C7rc-bQVUI_-3AiJ9SowG6cHTfqiC0SuDmQvyEuAfeJeGvyjhUjKxYveVK9N2q_bp4_sHUAjYeBXrQL"/>
+<div class="p-4">
+<h3 class="text-lg font-bold text-white">Cybernetic Knight</h3>
+<p class="text-sm text-[#9db0b9] mt-1">3D model and concept art for a futuristic game character.</p>
+<div class="mt-4 flex justify-between items-center">
+<a class="text-sm font-bold text-primary hover:underline" href="#">View Details</a>
+<div class="flex items-center gap-1" title="Related to 'Chronoscape' Game">
+<span class="material-symbols-outlined text-sm text-[#9db0b9]">sports_esports</span>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[#1c272d] rounded-lg overflow-hidden group" x-cloak="" x-show="tab === 'all' || tab === 'game'">
+<img class="w-full h-48 object-cover" data-alt="Promotional art for Chronoscape game" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFw-ktstWw_3T5ofUWJ5HEgAmzR2JKQNL6BgtM7ZLy9xCrzhFkLYKu8M1wJYSWBWTU0zoLoIxp7AkIfn0OCdgcKP95CDJ8OkPd6IT57P6UR-SDB1uIEs6-uUM9FnW7Y7O8qsMB4V0pzKwGrwDwNXoR3Zkg253qmgqr7mzGow9fqqDinzgDPVKbUZfKvfBYOPmBTgs18mnU-6zltvEtB2WKhF2DJGlsRY-ukJQWlSawCPj6ph-o5I2KvBJ4ZSAkaTfhwYBUo-QH8Sai"/>
+<div class="p-4">
+<h3 class="text-lg font-bold text-white">Chronoscape</h3>
+<p class="text-sm text-[#9db0b9] mt-1">A time-traveling puzzle-platformer built in Unity.</p>
+<div class="mt-4 flex flex-col gap-3">
+<div class="flex gap-2">
+<button class="flex-1 flex items-center justify-center gap-2 h-9 px-3 rounded-md bg-[#283339] text-white text-xs font-bold hover:bg-primary/20"><span class="material-symbols-outlined text-sm">download</span>Download</button>
+<button class="flex-1 flex items-center justify-center gap-2 h-9 px-3 rounded-md bg-[#283339] text-white text-xs font-bold hover:bg-primary/20"><span class="material-symbols-outlined text-sm">play_arrow</span>Watch Video</button>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-sm font-bold text-primary hover:underline" href="#">View Details</a>
+<div class="flex items-center gap-1" title="Related to 'Cybernetic Knight' Design">
+<span class="material-symbols-outlined text-sm text-[#9db0b9]">palette</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-[#1c272d] rounded-lg overflow-hidden group" x-cloak="" x-show="tab === 'all' || tab === 'planning'">
+<img class="w-full h-48 object-cover" data-alt="A game design document layout" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA90liwJPWY1sSQWTz8H32a3YPnhQcTxRu_xDX8LyF8gC_AxRkvoc1FVt9dul6i4dqFUOjuzGCrtjQcgH0HQeqeM3cr9R_l-H5hzwT54ASjB4mpOr7NkEwwimWqEpT_CMa-yxj1wR-to3W-kt9kXKPdvHflQ5y0XwYCtuLRKZu66yye41Eo57zaLEuP07eILlr8mdUfJnhBkQhoiN7Xz10WWRIbpVe1M9CLOD3wvy3ggOpmC7_Cl-zDr9jwZSVD19H2fPKzHQ2b79H5"/>
+<div class="p-4">
+<h3 class="text-lg font-bold text-white">Project Management GDD</h3>
+<p class="text-sm text-[#9db0b9] mt-1">Full game design document for a project management simulation.</p>
+<div class="mt-4 flex flex-col gap-3">
+<div class="flex gap-2">
+<button class="flex-1 flex items-center justify-center gap-2 h-9 px-3 rounded-md bg-[#283339] text-white text-xs font-bold hover:bg-primary/20"><span class="material-symbols-outlined text-sm">download</span>Download</button>
+</div>
+<div class="flex justify-between items-center">
+<a class="text-sm font-bold text-primary hover:underline" href="#">View Details</a>
+<div class="flex items-center gap-1" title="Related to 'Project Dashboard UI'">
+<span class="material-symbols-outlined text-sm text-[#9db0b9]">design_services</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="text-center py-8 border-t border-solid border-t-[#283339] mt-16">
+<p class="text-[#9db0b9] text-sm">© 2024 John Doe. All Rights Reserved.</p>
+<p class="text-[#9db0b9] text-sm mt-1">johndoe.portfolio@email.com</p>
+</footer>
+</div>
+</div>
+</div>
+</div>
+
+</body></html>
