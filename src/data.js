@@ -83,7 +83,12 @@ export const portfolioItems = [
         title: "IoT 메시 네트워크 제어 시스템",
         description: "(글로벌스마트솔루션) 스마트팜/건조기 응용. Mesh Network 기반 무선 제어 시스템 개발 및 상용화, MQTT 프로토콜 통신 개발.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "영상",
+                url: "https://youtu.be/DpaIf-U44s8?si=Y2o02E_zlQLwD90V"
+            },
+        ],
         related: {title: "글로벌스마트솔루션(주)", icon: "group_work"}
     },
     {
@@ -133,9 +138,18 @@ export const portfolioItems = [
         imgSrc: "images/placeholder-game-ninja.png",
         imgAlt: "그때 갑자기 닌자가 나타났다!",
         title: "그때 갑자기 닌자가 나타났다!",
-        description: "3D 아케이드 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "3D 아케이드 게임 (개인 프로젝트). 기획, 개발, 테스터, 구글 플레이 배포.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtu.be/Glp0o2QQ7OE?si=L3iWIIV43KOWNUl-"
+            },
+            {
+                text: "GitHub",
+                url: "https://github.com/kyj931221/01.Then-a-ninja-suddenly-appeared"
+            },
+        ],
         related: {title: "개인 프로젝트", icon: "person"}
     },
     {
@@ -148,7 +162,16 @@ export const portfolioItems = [
         title: "달로향하자! : For All Of Us",
         description: "플랫포머 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtu.be/9kRKZsyv2NQ?si=b2ngfARms_dkj-sr"
+            },
+            {
+                text: "GitHub",
+                url: "https://github.com/kyj931221/02.for-all-of-us"
+            },
+        ],
         related: {title: "개인 프로젝트", icon: "person"}
     },
     {
@@ -164,7 +187,11 @@ export const portfolioItems = [
         buttons: [
             {
                 text: "데모 영상",
-                url: "https://youtube.com/watch?v=..."
+                url: "https://youtu.be/q4wvyRo7qEI?si=0EMzPgX_5wnzkjfe"
+            },
+            {
+                text: "GitHub",
+                url: "#"
             },
         ],
         related: {title: "개인 프로젝트", icon: "person"}
@@ -179,7 +206,16 @@ export const portfolioItems = [
         title: "RE.MIND: AR Check List",
         description: "AR 체크리스트 앱 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtu.be/rV8lyufHbgM?si=MOCgsY3eGx8Iy3Oi"
+            },
+            {
+                text: "GitHub",
+                url: "#"
+            },
+        ],
         related: {title: "개인 프로젝트", icon: "person"}
     },
     {
@@ -192,7 +228,16 @@ export const portfolioItems = [
         title: "함께해요, 어린이 교통안전 (Team)",
         description: "AR 교육 콘텐츠 (팀 프로젝트). 기획, 개발, 테스터, 운영.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtu.be/4vkbCIt_f50?si=A_j-WFBtKJ_AbRI5"
+            },
+            {
+                text: "GitHub",
+                url: "#"
+            },
+        ],
         related: {title: "팀 프로젝트", icon: "group"}
     },
     {
@@ -205,7 +250,16 @@ export const portfolioItems = [
         title: "VR 명작동화 탐험대 (Team)",
         description: "VR 교육 콘텐츠 (팀 프로젝트). 기획, 개발, 테스터, 운영.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtu.be/9f-Qh_hm4RQ?si=mhcN2z34br4LUc0J"
+            },
+            {
+                text: "GitHub",
+                url: "#"
+            },
+        ],
         related: {title: "팀 프로젝트", icon: "group"}
     },
     {
@@ -218,7 +272,16 @@ export const portfolioItems = [
         title: "Catch You Catch Me",
         description: "위치 정보/미디어 AR 콘텐츠 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtube.com/shorts/q-FsHx9qLf8?si=95U8bwFo54JwWubx"
+            },
+            {
+                text: "GitHub",
+                url: "#"
+            },
+        ],
         related: {title: "개인 프로젝트", icon: "person"}
     },
     {
@@ -231,7 +294,16 @@ export const portfolioItems = [
         title: "The UnScene: Fear Unseen",
         description: "3인칭 TPS 공포 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
         link: "#",
-        buttons: [],
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtu.be/KLLUYLJmKxU?si=Sg7xsBF_2s219Xm2"
+            },
+            {
+                text: "GitHub",
+                url: "#"
+            },
+        ],
         related: {title: "개인 프로젝트", icon: "person"}
     },
     {
@@ -243,8 +315,17 @@ export const portfolioItems = [
         imgAlt: "김치-런",
         title: "유니티6 챌린지 : 김치-런",
         description: "생존 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
-        link: "#",
-        buttons: [],
+        link: "https://play.unity.com/en/games/3825e42d-cbc9-4a44-bce6-f6e832feb8ab/webgl-builds",
+        buttons: [
+            {
+                text: "데모 영상",
+                url: "https://youtube.com/watch?v=..."
+            },
+            {
+                text: "GitHub",
+                url: "#"
+            },
+        ],
         related: {title: "개인 프로젝트", icon: "person"}
     },
     {
