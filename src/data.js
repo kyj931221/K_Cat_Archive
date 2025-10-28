@@ -66,10 +66,10 @@ export const portfolioItems = [
         id: "p1",
         l1_type: "career", // 대분류: 경력
         l2_company: "(주)엠스텍", // 중분류: 회사명
-        imgSrc: "images/placeholder-qa.png",
+        imgSrc: "images/temporary image.png",
         imgAlt: "삼성 웰스토리 플러스 QA",
         title: "삼성 웰스토리 플러스 QA",
-        description: "(주)엠스텍 - 모바일 앱(AOS/IOS) 및 백오피스, 프론트오피스 시스템의 기능, 호환성, 데이터 정합성 검증 및 TC 설계.",
+        description: "모바일 앱(AOS/IOS) 및 백오피스, 프론트오피스 시스템의 기능, 호환성, 데이터 정합성 검증 및 TC 설계.",
         link: "#",
         buttons: [],
         related: {title: "(주)엠스텍", icon: "group_work"}
@@ -78,10 +78,10 @@ export const portfolioItems = [
         id: "p2",
         l1_type: "career",
         l2_company: "글로벌스마트솔루션(주)",
-        imgSrc: "images/placeholder-iot.png",
+        imgSrc: "images/temporary image.png",
         imgAlt: "IoT 메시 네트워크 제어 시스템",
         title: "IoT 메시 네트워크 제어 시스템",
-        description: "(글로벌스마트솔루션) 스마트팜/건조기 응용. Mesh Network 기반 무선 제어 시스템 개발 및 상용화, MQTT 프로토콜 통신 개발.",
+        description: "스마트팜/건조기 응용. Mesh Network 기반 무선 제어 시스템 개발 및 상용화, MQTT 프로토콜 통신 개발.",
         link: "#",
         buttons: [
             {
@@ -96,10 +96,10 @@ export const portfolioItems = [
         id: "p3",
         l1_type: "career",
         l2_company: "글로벌스마트솔루션(주)",
-        imgSrc: "images/placeholder-iot-fire.png",
+        imgSrc: "images/temporary image.png",
         imgAlt: "주방용 화재 감지 제품 개발",
         title: "주방용 화재 감지 제품 개발",
-        description: "(글로벌스마트솔루션) 카메라와 복합 센서 기반 감지기 개발. PCB 회로, 3D 모델링, 시제품 제작, 성능 테스트, 기술 보고서 작성.",
+        description: "카메라와 복합 센서 기반 감지기 개발. PCB 회로, 3D 모델링, 시제품 제작, 성능 테스트, 기술 보고서 작성.",
         link: "#",
         buttons: [],
         related: {title: "글로벌스마트솔루션(주)", icon: "group_work"}
@@ -108,7 +108,7 @@ export const portfolioItems = [
         id: "p4",
         l1_type: "career",
         l2_company: "글로벌스마트솔루션(주)",
-        imgSrc: "images/placeholder-iot-laver.png",
+        imgSrc: "images/temporary image.png",
         imgAlt: "ICT 융합형 스마트 물김 양육 시스템",
         title: "ICT 융합형 스마트 물김 양육 시스템",
         description: "(국가 과제) 책임 연구원. 시스템 전체 설계(로직, 3D 모델링), 컨트롤러 H/W 설계 및 제작, 현장 테스트 및 최종 보고서 작성.",
@@ -123,7 +123,7 @@ export const portfolioItems = [
         l1_type: "personal", // 대분류: 개인
         l2_category: "planning", // 중분류: 기획
         l3_subcategory: null, // 소분류: 없음
-        imgSrc: "images/placeholder-web.png",
+        imgSrc: "images/temporary image.png",
         imgAlt: "개인 포트폴리오 웹사이트",
         title: "개인 포트폴리오 웹사이트 (SPA)",
         description: "SPA 구조로 기획 및 제작. 컴포넌트 기반 모듈화 설계 적용 (HTML, CSS, JS, jQuery). GitHub Pages 배포.",
@@ -136,10 +136,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content", // 중분류: 콘텐츠
         l3_subcategory: "game", // 소분류: 게임
-        imgSrc: "images/placeholder-game-ninja.png",
+        imgSrc: "images/그때 갑자기 닌자가 나타났다!.png",
         imgAlt: "그때 갑자기 닌자가 나타났다!",
         title: "그때 갑자기 닌자가 나타났다!",
-        description: "3D 아케이드 게임 (개인 프로젝트). 기획, 개발, 테스터, 구글 플레이 배포.",
+        description: "랜덤으로 생성되는 닌자의 공격을 피해 달아나는 3D 아케이드 게임",
         link: "#",
         buttons: [
             {
@@ -159,10 +159,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "game",
-        imgSrc: "images/placeholder-game-moon.png",
+        imgSrc: "images/달로향하자!.png",
         imgAlt: "달로향하자!",
         title: "달로향하자! : For All Of Us",
-        description: "플랫포머 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "움직이는 발판, 보이지않는 발판, 함정을 피해 목표에 도달하는 플랫포머 게임",
         link: "#",
         buttons: [
             {
@@ -182,10 +182,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "ar-vr", // 소분류: AR-VR
-        imgSrc: "images/placeholder-ar-earth.png",
+        imgSrc: "images/NEW 지구를 지켜라.png",
         imgAlt: "AR 지구를지켜라",
         title: "AR 지구를지켜라: Protect The Earth",
-        description: "AR 슈팅 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "실감나는 연출, 음악, 운석을 파괴하는 스마트폰 AR 슈팅 게임",
         link: "#",
         buttons: [
             {
@@ -205,10 +205,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "ar-vr",
-        imgSrc: "images/placeholder-ar-checklist.png",
+        imgSrc: "images/RE.MIND _ AR Check List.png",
         imgAlt: "RE.MIND: AR Check List",
         title: "RE.MIND: AR Check List",
-        description: "AR 체크리스트 앱 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "AR 이미지 트래킹을 이용한 2D UI 체크리스트 관리 어플리케이션",
         link: "#",
         buttons: [
             {
@@ -228,10 +228,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "ar-vr",
-        imgSrc: "images/placeholder-ar-traffic.png",
+        imgSrc: "images/어린이 교통안전.png",
         imgAlt: "어린이 교통안전",
         title: "함께해요, 어린이 교통안전 (Team)",
-        description: "AR 교육 콘텐츠 (팀 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "음성과 애니메이션을 이용한 AR 이미지 트래킹 어린이 교통안전 콘텐츠",
         link: "#",
         buttons: [
             {
@@ -251,10 +251,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "ar-vr",
-        imgSrc: "images/placeholder-vr-fairytale.png",
+        imgSrc: "images/VR 명작 동화.png",
         imgAlt: "VR 명작동화 탐험대",
-        title: "VR 명작동화 탐험대 (Team)",
-        description: "VR 교육 콘텐츠 (팀 프로젝트). 기획, 개발, 테스터, 운영.",
+        title: "VR 명작동화 탐험대",
+        description: "VR 교육 콘텐츠:아이들을 위한 교육용 VR 동화 교육 콘텐츠",
         link: "#",
         buttons: [
             {
@@ -274,10 +274,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "ar-vr",
-        imgSrc: "images/placeholder-ar-catchyou.png",
+        imgSrc: "images/Catch You Catch Me.png",
         imgAlt: "Catch You Catch Me",
         title: "Catch You Catch Me",
-        description: "위치 정보/미디어 AR 콘텐츠 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "특별한 장소에서 추억을 기록하고 공유할 수 있는 위치 정보 및 미디어 플레이어 AR 콘텐츠",
         link: "#",
         buttons: [
             {
@@ -297,10 +297,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "game",
-        imgSrc: "images/placeholder-game-unscene.png",
+        imgSrc: "images/UnSecne.png",
         imgAlt: "The UnScene: Fear Unseen",
         title: "The UnScene: Fear Unseen",
-        description: "3인칭 TPS 공포 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "빛으로 몬스터의 존재를 밝히고, 지우는 3인칭 TPS 공포게임",
         link: "#",
         buttons: [
             {
@@ -320,10 +320,10 @@ export const portfolioItems = [
         l1_type: "personal",
         l2_category: "content",
         l3_subcategory: "game",
-        imgSrc: "images/placeholder-game-kimchi.png",
+        imgSrc: "images/KIMCHI-RUN.png",
         imgAlt: "김치-런",
         title: "유니티6 챌린지 : 김치-런",
-        description: "생존 게임 (개인 프로젝트). 기획, 개발, 테스터, 운영.",
+        description: "유니티6 챌린지 : 오랜 시간 동안 김치 재료 아이템을 획득하여 장애물을 피해 살아남아라!",
         link: "https://play.unity.com/en/games/3825e42d-cbc9-4a44-bce6-f6e832feb8ab/webgl-builds",
         buttons: [
             {
@@ -344,7 +344,7 @@ export const portfolioItems = [
         l2_company: null, // 디바이스는 회사/카테고리 분류가 없음
         l2_category: null,
         l3_subcategory: null,
-        imgSrc: "images/placeholder-device.png", // ⭐️ public/images/ 에 이미지 추가 필요
+        imgSrc: "images/temporary image.png", // ⭐️ public/images/ 에 이미지 추가 필요
         imgAlt: "샘플 디바이스",
         title: "샘플 디바이스 프로젝트",
         description: "이곳에 디바이스 프로젝트 설명을 입력하세요. (예: 아두이노 기반 IoT 기기)",
