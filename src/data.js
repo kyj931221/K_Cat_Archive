@@ -351,5 +351,34 @@ export const portfolioItems = [
         link: "#",
         buttons: [],
         related: {title: "디바이스 제작", icon: "memory"} // ⭐️ 아이콘 예시
-    }
+    },
+    // --- 기획 프로젝트 ---
+    {
+        id: "p_report_01",
+        l1_type: "personal",     // 대분류: 개인
+        l2_category: "planning", // 중분류: 기획
+        l3_subcategory: null,
+
+        imgSrc: "public/images/vr_webtoon_report.png", // ⭐️ 1단계에서 만든 썸네일 이미지 경로
+        imgAlt: "VR 웹툰 리포트",
+        title: "VR 시대의 웹툰 진화 (기획/분석)",
+        description: "VR/AR 기술과 웹툰 시장을 분석한 인터랙티브 웹 리포트. (HTML, CSS3, Chart.js)",
+
+        // ⭐️ "View Details" 링크 (라이브 HTML 페이지로 연결)
+        link: "public/report/vr_webtoon_report.html",
+
+        buttons: [
+            {
+                text: "라이브 리포트",
+                link: "public/report/vr_webtoon_report.html", // ⭐️ public 폴더의 HTML (새 탭에서 열림)
+                icon: "open_in_new"
+            },
+            {
+                text: "PDF 다운로드",
+                link: "public/pdf/vr_webtoon_report.pdf", // ⭐️ public 폴더의 PDF (클릭 시 다운로드)
+                icon: "download"
+            }
+        ],
+        related: { title: "개인 기획", icon: "person" }
+    },
 ];
